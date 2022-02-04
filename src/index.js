@@ -3,10 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+import {About} from './routes/About.jsx';
+import {Blog} from './routes/Blog.jsx';
+import {Portfolio} from './routes/Portfolio.jsx';
+import {Template} from './routes/Template.jsx';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Template current='Home' element={<App/>}/>} />
+        {/* <Route path="about" element={<Template current='About' element={<About/>}/>} /> */}
+        {/* <Route path="blog" element={<Template current='Blog' element={<Blog/>}/>} /> */}
+        <Route path="portfolio" element={<Template current='Portfolio' element={<Portfolio/>}/>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
