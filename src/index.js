@@ -16,8 +16,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Template current='Home' element={<App/>}/>} />
-        {/* <Route path="about" element={<Template current='About' element={<About/>}/>} /> */}
-        {/* <Route path="blog" element={<Template current='Blog' element={<Blog/>}/>} /> */}
+        <Route path="about" element={<Template current='About' element={<About/>}/>} />
+        <Route path="blog" element={<Template current='Blog' element={<Blog/>}/>} />
         <Route path="portfolio" element={<Template current='Portfolio' element={<Portfolio/>}/>} />
       </Routes>
     </BrowserRouter>

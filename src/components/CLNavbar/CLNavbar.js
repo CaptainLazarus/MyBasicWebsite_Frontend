@@ -20,8 +20,8 @@ class CLNavbar extends React.Component {
     render() {
         const navList = [
             'Home',
-            // 'About',
-            // 'Blog',
+            'About',
+            'Blog',
             'Portfolio'
         ];
 
